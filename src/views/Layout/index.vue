@@ -15,8 +15,6 @@ export default {
 </script>
 
 <template>
-  <van-nav-bar title="會員登入" fixed left-arrow @click-left="onClickLeft" />
-
   <router-view></router-view>
   <van-tabbar v-model="active" route fixed>
     <van-tabbar-item to="/home" icon="home-o">首頁</van-tabbar-item>

@@ -18,11 +18,11 @@ export default {
       this.history.unshift(key)
       SearchStore.setHistory(this.history)
       // 跳轉傳參數
-      this.$router.push(`/searchlist/${key}`)
+      this.$router.push(`/searchlist?search=${key}`)
     },
     // 最近歷史
     goHistory(item) {
-      this.$router.push(`/searchlist/${item}`)
+      this.$router.push(`/searchlist?search=${item}`)
     },
     // 清空搜尋歷史
     clearHistory() {
